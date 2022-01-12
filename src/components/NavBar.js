@@ -1,17 +1,23 @@
-import { Link, Outlet } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
-function NavBar() {
+function NavBar({ pages }) {
     return (
         <div className="nav-container">
             <nav>
                 <ul className="nav-links">
-                    <Link className="nav-link" to="/">Home</Link>
-                    <Link className="nav-link" to="/about">About</Link>
-                    <Link className="nav-link" to="/menu">Menu</Link>
-                    <Link className="nav-link" to="/contact">Contact</Link>                                
+                    <NavLink className="nav-link" to="/">Home</NavLink>
+
+                    {pages.map(page => 
+                        <NavLink 
+                            className="nav-link" 
+                            key={page} 
+                            to={`/${page.toLowerCase()}`}
+                        >
+                            {page}
+                        </NavLink>
+                    )}                             
                 </ul>
             </nav>
-            <Outlet />
         </div>
 
     )

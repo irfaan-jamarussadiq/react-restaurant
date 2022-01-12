@@ -2,6 +2,7 @@ import './App.css'
 import {  
   Routes, 
   Route,
+  Outlet,
 } from 'react-router-dom'
 import Home from './components/pages/Home.js'
 import About from './components/pages/About.js'
@@ -14,14 +15,15 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Restaurant</h1>
-        <NavBar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/contact" element={<Contact />} />        
-        </Routes>
+        <NavBar pages={['About', 'Menu', 'Contact']}/>
       </header>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/contact" element={<Contact />} />        
+      </Routes>
+      <Outlet />
     </div>
   )
 }

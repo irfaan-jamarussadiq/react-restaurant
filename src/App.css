@@ -1,3 +1,12 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* App header */
+.App-header {
+    text-align: center;
+}
+
 /* Navigation bar */
 .nav-container {
     margin: 0 auto;
@@ -17,4 +26,62 @@
 
 .nav-link:hover {
     color: #333;
+}
+
+/* Contact Form */
+.form-container {
+    padding: 1rem;
+}
+
+.form-fields {
+    width: 100%;
+}
+
+.form-field, .submit-btn {
+    margin: 0.5rem 0.25rem;
+}
+
+.form-field input, .form-field textarea {
+    margin: 0.25rem 0rem;
+    padding: 0.5rem 0rem;
+    font-size: 1em;
+    width: 100%;
+}
+
+.form-field label {
+    font-size: medium;
+    font-weight: bold;
+    display: block;
+}
+
+.form-input {
+    display: block;
+}
+
+.submit-btn {
+    display: block;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    margin: 1rem auto;
+    font-size: medium;
+    color: white;
+    border: none;
+    background-color: #0ea5e9;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Shadow around a container */
+.shadow-lg {
+    --tw-shadow: 
+        0 10px 15px -3px rgba(0,0,0,.1),
+        0 4px 6px -4px rgba(0,0,0,.1);
+    --tw-shadow-colored: 
+        0 10px 15px -3px var(--tw-shadow-color), 
+        0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: 0 0 #0000,0 0 #0000, var(--tw-shadow);
+    box-shadow: 
+        var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000),
+        var(--tw-shadow);
 }
