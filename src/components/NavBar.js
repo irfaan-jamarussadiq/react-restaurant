@@ -19,7 +19,6 @@ function NavBar({ pages }) {
                 </ul>
             </nav>
         </div>
-
     )
 }
 
