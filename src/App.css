@@ -109,3 +109,7 @@ body {
         var(--tw-ring-shadow, 0 0 #0000),
         var(--tw-shadow);
 }
+
+.page-container {
+    margin: 8px;
+}
