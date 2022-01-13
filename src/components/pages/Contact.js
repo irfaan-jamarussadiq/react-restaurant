@@ -1,6 +1,6 @@
 function Form({ handleSubmit, children }) {
     return (
-        <form onSubmit={handleSubmit} className="form-fields">
+        <form onSubmit={handleSubmit}>
             { children }
             <button type="submit" className="submit-btn">Submit</button>
         </form>
@@ -30,9 +30,11 @@ function Contact() {
         <div className="form-container shadow-lg">
             <h2>Contact</h2>
             <Form>
-                <FormInput type='email' label='Email' id='email' required={true} />
-                <FormInput label='Subject' id='subject' required={true} />
-                <FormTextArea label='Message' id='message' />                
+                <div className="form-fields">
+                    <FormInput type='email' label='Email' id='email' required={true} />
+                    <FormInput label='Subject' id='subject' required={true} />
+                    <FormTextArea label='Message' id='message' /> 
+                </div>               
             </Form>
         </div>
     )

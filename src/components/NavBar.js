@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 
 function NavBar({ pages }) {
     return (
-        <div className="nav-container">
+        <div className="nav-container shadow-lg">
             <nav>
                 <ul className="nav-links">
                     {pages.map(page => 
