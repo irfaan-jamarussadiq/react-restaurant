@@ -1,6 +1,7 @@
 import './App.css'
 import {  
-  Routes, 
+  Routes,
+  Link, 
   Route,
   Outlet,
 } from 'react-router-dom'
@@ -15,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Restaurant</h1>
+        <Link className="link" to="/"><h1>Restaurant</h1></Link>
         <NavBar pages={['About', 'Menu', 'Contact']}/>
       </header>
       <Routes>

@@ -5,8 +5,6 @@ function NavBar({ pages }) {
         <div className="nav-container">
             <nav>
                 <ul className="nav-links">
-                    <NavLink className="nav-link" to="/">Home</NavLink>
-
                     {pages.map(page => 
                         <NavLink 
                             className="nav-link" 
