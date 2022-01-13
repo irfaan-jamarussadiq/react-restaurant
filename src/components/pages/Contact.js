@@ -14,16 +14,20 @@ function Contact() {
             <h2>Contact</h2>
             <form className="form-fields">
                 <div className="form-field"> 
-                    <label>Email</label>
-                    <input className="form-input"/>
+                    <label htmlFor="email">
+                        Email
+                    </label>
+                    <input id="email" type="email" required/>
                 </div>
                 <div className="form-field">
-                    <label>Subject</label>
-                    <input className="form-input"/>
+                    <label htmlFor="subject">
+                        Subject
+                    </label>
+                    <input id="subject" type="text" required/>
                 </div>
                 <div className="form-field">
-                    <label>Message</label>
-                    <textarea rows="4" className="form-input"></textarea>
+                    <label htmlFor="message" type="text">Message</label>
+                    <textarea id="message" wrap="hard"></textarea>
                 </div>
                 <button type="submit" className="submit-btn">Submit</button>
             </form>
