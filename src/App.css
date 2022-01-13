@@ -1,10 +1,4 @@
 /* App header */
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #bbf7d0;
-}
-
 .App-header {
     text-align: center;
     background-color: #22c55e;
@@ -94,15 +88,21 @@ body {
 #footer {
     background-color: #15803d;
     color: white;
-    padding: 0.25em 0em;
+    padding: 0.5em 0em;
     text-align: center;
     width: 100%;
 }
 
-
 /* General styles */
 * {
     font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #bbf7d0;
+    height: 100vh;
 }
 
 /* Shadow around a container */
@@ -121,5 +121,5 @@ body {
 }
 
 .page-container {
-    margin: 8px;
+    margin: 0.25rem;
 }

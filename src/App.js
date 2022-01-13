@@ -19,19 +19,21 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header shadow-lg">
-        <Link className="link" to="/">
-          <img src={logo} className='shadow-lg' alt="Latheeth logo"/>
-        </Link>
-        <NavBar pages={['About', 'Menu', 'Contact']}/>
-      </header>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/menu" element={<Menu />} />
-        <Route path="/contact" element={<Contact />} />        
-      </Routes>
-      <Outlet />
+      <div className="content-wrap">
+        <header className="App-header shadow-lg">
+          <Link className="link" to="/">
+            <img src={logo} className='shadow-lg' alt="Latheeth logo"/>
+          </Link>
+          <NavBar pages={['About', 'Menu', 'Contact']}/>
+        </header>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/contact" element={<Contact />} />        
+        </Routes>
+        <Outlet />
+      </div>
       <Footer year='2022' company={restaurantName} developer='Irfaan Jamarussadiq' />
     </div>
   )

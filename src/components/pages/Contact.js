@@ -27,7 +27,7 @@ function FormTextArea({ label, id }) {
 
 function Contact() {
     return (
-        <div className="form-container shadow-lg">
+        <div className="form-container">
             <h2>Contact</h2>
             <Form>
                 <div className="form-fields">
