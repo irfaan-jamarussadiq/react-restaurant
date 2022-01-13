@@ -1,10 +1,27 @@
-// import Form from '../Form.js'
-
-function Form() {
+function Form({ handleSubmit, children }) {
     return (
-        <form>
-            { /* ... */ }
+        <form onSubmit={handleSubmit} className="form-fields">
+            { children }
+            <button type="submit" className="submit-btn">Submit</button>
         </form>
+    )
+}
+
+function FormInput({ type='text', label, id, required=false }) {
+    return (
+        <div className="form-field"> 
+            <label htmlFor={id}>{label}</label>
+            <input id={id} type={type} required={required}/>
+        </div>
+    )
+}
+
+function FormTextArea({ label, id }) {
+    return (
+        <div className="form-field">
+            <label htmlFor={id}>{label}</label>
+            <textarea id={id} wrap="hard"></textarea>
+        </div>
     )
 }
 
@@ -12,25 +29,11 @@ function Contact() {
     return (
         <div className="form-container shadow-lg">
             <h2>Contact</h2>
-            <form className="form-fields">
-                <div className="form-field"> 
-                    <label htmlFor="email">
-                        Email
-                    </label>
-                    <input id="email" type="email" required/>
-                </div>
-                <div className="form-field">
-                    <label htmlFor="subject">
-                        Subject
-                    </label>
-                    <input id="subject" type="text" required/>
-                </div>
-                <div className="form-field">
-                    <label htmlFor="message" type="text">Message</label>
-                    <textarea id="message" wrap="hard"></textarea>
-                </div>
-                <button type="submit" className="submit-btn">Submit</button>
-            </form>
+            <Form>
+                <FormInput type='email' label='Email' id='email' required={true} />
+                <FormInput label='Subject' id='subject' required={true} />
+                <FormTextArea label='Message' id='message' />                
+            </Form>
         </div>
     )
 }
