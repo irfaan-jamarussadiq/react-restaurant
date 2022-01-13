@@ -11,12 +11,18 @@ import Menu from './components/pages/Menu.js'
 import Contact from './components/pages/Contact.js'
 import NavBar from './components/NavBar.js'
 import Footer from './components/Footer.js'
+import logo from './images/logo.png'
 
 function App() {
+  const restaurantName = 'Latheeth'
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <Link className="link" to="/"><h1>Restaurant</h1></Link>
+      <header className="App-header shadow-lg">
+        <Link className="link" to="/">
+          <img src={logo} className='shadow-lg' alt="Latheeth logo"/>
+        </Link>
         <NavBar pages={['About', 'Menu', 'Contact']}/>
       </header>
       <Routes>
@@ -26,7 +32,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />        
       </Routes>
       <Outlet />
-      <Footer year='2022' company='Restaurant' developer='Irfaan Jamarussadiq' />
+      <Footer year='2022' company={restaurantName} developer='Irfaan Jamarussadiq' />
     </div>
   )
 }
