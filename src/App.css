@@ -1,4 +1,9 @@
 /* App header */
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .App-header {
     text-align: center;
 }
@@ -27,6 +32,7 @@
 /* Contact Form */
 .form-container {
     padding: 1rem;
+    margin: 8px;
 }
 
 .form-fields {
@@ -71,6 +77,18 @@
     cursor: pointer;
     width: 100%;
 }
+
+/* Footer */
+#footer {
+    background-color: #312e81;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: 0.25em 0em;
+    text-align: center;
+    width: 100%;
+}
+
 
 /* General styles */
 * {
