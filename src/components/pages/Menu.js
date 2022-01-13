@@ -1,6 +1,6 @@
 function Menu() {
     return (
-        <div>
+        <div className="page-container">
             <h2>Menu</h2>
         </div>
     )
