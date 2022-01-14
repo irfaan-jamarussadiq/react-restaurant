@@ -1,7 +1,9 @@
+import home from '../../images/home.jpg'
+
 function Home() {
     return (
-        <div className="page-container">
-            <h2>Home</h2>
+        <div className="home-page page-container">
+            <img src={home} alt="South Indian food"/>
         </div>
     )
 }

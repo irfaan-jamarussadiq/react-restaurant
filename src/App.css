@@ -4,6 +4,28 @@
     background-color: #22c55e;
 }
 
+/* Home page */
+.home-page {
+    display: block;
+}
+
+.home-page img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* About page */
+.about-text {
+    max-width: 40vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-text {
+        max-width: 100%;
+    }
+}
+
 /* Location */
 .street-address {
     display: inline;
@@ -103,6 +125,8 @@
 
 /* Footer */
 #footer {
+    position: absolute;
+    bottom: 0;
     background-color: #15803d;
     color: white;
     padding: 0.5em 0em;
