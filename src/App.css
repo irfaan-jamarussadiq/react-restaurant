@@ -1,4 +1,10 @@
 /* App header */
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .App-header {
     text-align: center;
     background-color: #22c55e;
@@ -68,8 +74,6 @@
     color: #333;
 }
 
-/* Hours */
-
 /* Contact Form */
 .form-container {
     padding: 1rem;
@@ -77,8 +81,14 @@
 }
 
 .form-fields {
-    width: 100%;
+    max-width: 50%;
     margin-bottom: 1.25em;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-fields {
+        max-width: 100%;
+    }
 }
 
 .form-field {
@@ -111,7 +121,6 @@
 
 .submit-btn {
     display: block;
-    margin: 0 auto;
     text-align: center;
     padding: 0.5rem 0rem;
     border-radius: 1rem;
@@ -120,13 +129,12 @@
     border: none;
     background-color: #22c55e;
     cursor: pointer;
-    width: 250px;
+    width: 10rem;
 }
 
 /* Footer */
 #footer {
-    position: absolute;
-    bottom: 0;
+    margin-top: auto;
     background-color: #15803d;
     color: white;
     padding: 0.5em 0em;
