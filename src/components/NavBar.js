@@ -1,17 +1,17 @@
 import { NavLink } from 'react-router-dom'
 
-function NavBar({ pages }) {
+function NavBar({ links }) {
     return (
         <div className="nav-container shadow-lg">
             <nav>
                 <ul className="nav-links">
-                    {pages.map(page => 
+                    {links.map(link => 
                         <NavLink 
                             className="nav-link" 
-                            key={page} 
-                            to={`/${page.toLowerCase()}`}
+                            key={link} 
+                            to={`/${link.toLowerCase()}`}
                         >
-                            {page}
+                            {link}
                         </NavLink>
                     )}                             
                 </ul>
