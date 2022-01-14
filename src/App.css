@@ -4,6 +4,21 @@
     background-color: #22c55e;
 }
 
+/* Location */
+.street-address {
+    display: inline;
+}
+
+/* Hours */
+.table-cell-gap {
+    width: 25%;
+}
+
+.dash-container {
+    width: 1.25rem;
+    text-align: center;
+}
+
 /* Navigation bar */
 .nav-container {
     padding: 0.25rem 0rem;
@@ -30,6 +45,8 @@
 .nav-link:hover {
     color: #333;
 }
+
+/* Hours */
 
 /* Contact Form */
 .form-container {
@@ -121,5 +138,5 @@ body {
 }
 
 .page-container {
-    margin: 0.25rem;
+    margin: 3rem 2rem; 
 }

@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom'
 import Home from './components/pages/Home.js'
 import About from './components/pages/About.js'
+import DaySchedules from './components/pages/Hours.js'
 import Menu from './components/pages/Menu.js'
 import Contact from './components/pages/Contact.js'
 import NavBar from './components/NavBar.js'
@@ -24,11 +25,12 @@ function App() {
           <Link className="link" to="/">
             <img src={logo} className='shadow-lg' alt="Latheeth logo"/>
           </Link>
-          <NavBar pages={['About', 'Menu', 'Contact']}/>
+          <NavBar pages={['About', 'Hours', 'Menu', 'Contact']}/>
         </header>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/hours" element={<DaySchedules />} />  
           <Route path="/menu" element={<Menu />} />
           <Route path="/contact" element={<Contact />} />        
         </Routes>
