@@ -1,42 +1,35 @@
 import './App.css'
-import {  
-  Routes,
-  Link, 
-  Route,
-  Outlet,
-} from 'react-router-dom'
-import Home from './components/pages/Home.js'
-import About from './components/pages/About.js'
-import DaySchedules from './components/pages/Hours.js'
-import Menu from './components/pages/Menu.js'
-import Contact from './components/pages/Contact.js'
-import NavBar from './components/NavBar.js'
-import Footer from './components/Footer.js'
+import { Routes, Link, Route, Outlet } from 'react-router-dom'
+import { NavBar, Footer, Home, About, DaySchedules, Menu, Order, Contact } from './index'
 import logo from './images/logo.png'
 
-function App() {
-  const restaurantName = 'Latheeth'
+function Header({ links, logo }) {
+  return (
+    <header className="App-header shadow-lg">
+      <Link className="link" to="/">
+        <img src={logo} className='shadow-lg' alt="Latheeth logo"/>
+      </Link>
+      <NavBar links={links}/>
+    </header>
+  )
+}
 
+function App() {
+  const pages = ['About', 'Hours', 'Menu', 'Order Online', 'Contact']
 
   return (
     <div className="App">
-      <div className="content-wrap">
-        <header className="App-header shadow-lg">
-          <Link className="link" to="/">
-            <img src={logo} className='shadow-lg' alt="Latheeth logo"/>
-          </Link>
-          <NavBar pages={['About', 'Hours', 'Menu', 'Contact']}/>
-        </header>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/hours" element={<DaySchedules />} />  
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/contact" element={<Contact />} />        
-        </Routes>
-        <Outlet />
-      </div>
-      <Footer year='2022' company={restaurantName} developer='Irfaan Jamarussadiq' />
+      <Header links={pages} logo={logo} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/hours" element={<DaySchedules />} />  
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/order" element={<Order />} />  
+        <Route path="/contact" element={<Contact />} />        
+      </Routes>
+      <Outlet />
+      <Footer year='2022' company='Latheeth' developer='Irfaan Jamarussadiq' />
     </div>
   )
 }
