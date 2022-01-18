@@ -10,15 +10,110 @@
     background-color: #22c55e;
 }
 
+.restaurant-icon {
+    padding-left: 0.35rem;
+}
+
+#company {
+    font-family: 'The Nautigal', cursive;
+}
+
+.social-media i {
+    padding: 0rem 1rem;
+}
+
+.restaurant-contact {
+    padding: 0 1rem;
+}
+
+/* Restaurant Info */
+.restaurant-info {
+    display: flex;
+    background-color: #15803d;
+    color: white;
+    font-size: large;
+    padding: 0.5rem;
+    white-space: nowrap;
+}
+
+#company {
+    color: white;
+    width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    #address {
+        display: none;
+    }
+
+    #phone {
+        width: 25%;
+    }
+
+    #company {
+        width: 50%;
+        text-align: center;
+        order: 2;
+    }
+
+    .social-media {
+        width: 30%;
+        order: 3;
+    }
+}
+
 /* Home page */
 .home-page {
-    display: block;
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .home-page img {
-    display: block;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(241, 241, 241, 0.25);
+}
+
+@media only screen and (max-width: 768px) {
+    .img-overlay {
+        height: 100vh;
+    }
+
+    .home-page img {
+        display: none;
+    }
+}
+
+#title {
+    font-family: 'The Nautigal', cursive;
+    font-size: 10em;
+    margin: 0;
+    text-align: center;
+}
+
+#subtitle {
+    font-family: 'The Nautigal', cursive;
+    text-align: center;
+    font-size: 3em;
     margin: 0 auto;
-    max-width: 100%;
+}
+
+.heading-text {
+    margin-top: 8em;
 }
 
 /* About page */
@@ -26,20 +121,15 @@
     max-width: 40vw;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .about-text {
         max-width: 100%;
     }
 }
 
-/* Location */
-.street-address {
-    display: inline;
-}
-
 /* Hours */
 .table-cell-gap {
-    width: 25%;
+    width: 20%;
 }
 
 .dash-container {
@@ -47,15 +137,25 @@
     text-align: center;
 }
 
+#schedule {
+    background-color: white;
+    line-height: 1.5em;
+    padding: 0.25rem 0.5em;
+}
+
+.table-row {
+    margin: 0.25rem 2rem;
+}
+
 /* Navigation bar */
 .nav-container {
-    padding: 0.25rem 0rem;
+    padding: 1rem 0rem;
     margin: 0 auto;
 }
 
 .nav-links {
-    margin-left: 0;
-    padding-left: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-link {
@@ -85,7 +185,7 @@
     margin-bottom: 1.25em;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .form-fields {
         max-width: 100%;
     }
