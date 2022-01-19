@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 function Location({ streetAddress, city, state, zipcode }) {
     return (
         <div className="restaurant-contact" id="address">

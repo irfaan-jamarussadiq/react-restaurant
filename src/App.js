@@ -1,21 +1,26 @@
 import './App.css'
-import { Routes, Link, Route, Outlet } from 'react-router-dom'
-import { NavBar, Footer, Home, About, DaySchedules, Menu, Order, Contact } from './index'
+import { Routes, Route, Outlet } from 'react-router-dom'
+import { NavBar, Footer, Home, About, DaySchedules, Menu, Contact } from './index'
+import RestaurantInfo from './components/RestaurantInfo'
 import logo from './images/logo.png'
 
 function Header({ links, logo }) {
   return (
     <header className="App-header shadow-lg">
-      <Link className="link" to="/">
-        <img src={logo} className='shadow-lg' alt="Latheeth logo"/>
-      </Link>
+      <RestaurantInfo 
+        streetAddress='12345 Example Street' 
+        city='City' 
+        state='ST' 
+        zipcode='99999'
+        phone='999-999-9999' 
+      />
       <NavBar links={links}/>
     </header>
   )
 }
 
 function App() {
-  const pages = ['About', 'Hours', 'Menu', 'Order Online', 'Contact']
+  const pages = ['About', 'Hours', 'Menu', 'Contact']
 
   return (
     <div className="App">
@@ -25,7 +30,6 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/hours" element={<DaySchedules />} />  
         <Route path="/menu" element={<Menu />} />
-        <Route path="/order" element={<Order />} />  
         <Route path="/contact" element={<Contact />} />        
       </Routes>
       <Outlet />
