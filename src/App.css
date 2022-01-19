@@ -14,12 +14,17 @@
     padding-left: 0.35rem;
 }
 
-#company {
-    font-family: 'The Nautigal', cursive;
+#phone {
+    order: 2;
+}
+
+.social-media {
+    margin-left: auto;
+    order: 3;
 }
 
 .social-media i {
-    padding: 0rem 1rem;
+    padding: 0rem 0.5rem;
 }
 
 .restaurant-contact {
@@ -31,34 +36,13 @@
     display: flex;
     background-color: #15803d;
     color: white;
-    font-size: large;
     padding: 0.5rem;
     white-space: nowrap;
-}
-
-#company {
-    color: white;
-    width: 50%;
 }
 
 @media only screen and (max-width: 768px) {
     #address {
         display: none;
-    }
-
-    #phone {
-        width: 25%;
-    }
-
-    #company {
-        width: 50%;
-        text-align: center;
-        order: 2;
-    }
-
-    .social-media {
-        width: 30%;
-        order: 3;
     }
 }
 

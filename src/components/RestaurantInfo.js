@@ -39,7 +39,6 @@ function RestaurantInfo({ streetAddress, city, state, zipcode, phone }) {
                 state={state}
                 zipcode={zipcode}
             />
-            <Link to="/" className="nav-link" id="company">Latheeth</Link>
             <PhoneNumber number={phone} />
             <SocialMedia platforms={['twitter', 'instagram', 'yelp']} />
         </div>
