@@ -1,6 +1,6 @@
 import './App.css'
 import { Routes, Route, Outlet } from 'react-router-dom'
-import { NavBar, Footer, Home, About, DaySchedules, Menu, Contact } from './index'
+import { NavBar, Footer, Home, About, HoursOfOperation, Menu, Contact } from './index'
 import RestaurantInfo from './components/RestaurantInfo'
 import logo from './images/logo.png'
 
@@ -28,11 +28,15 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/hours" element={<DaySchedules />} />  
+        <Route path="/hours" element={<HoursOfOperation />} />  
         <Route path="/menu" element={<Menu />} />
         <Route path="/contact" element={<Contact />} />        
       </Routes>
       <Outlet />
+      {/* <About />
+      <HoursOfOperation />
+      <Menu />
+      <Contact /> */}
       <Footer year='2022' company='Latheeth' developer='Irfaan Jamarussadiq' />
     </div>
   )
