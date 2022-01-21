@@ -5,13 +5,13 @@ function NavBar({ links }) {
         <div className="nav-container shadow-xl">
             <nav>
                 <ul className="nav-links">
-                    {/* Need page id here! */}
                     {links.map(link => 
                         <Link 
                             className="nav-link" 
                             key={link} 
                             to={link.toLowerCase()}
                             smooth={true}
+                            offset={-70}
                         >
                             {link}
                         </Link>
