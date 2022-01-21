@@ -12,6 +12,8 @@ import eggBiryani from "../../images/eggBiryani.jfif"
 import eggPorotha from "../../images/egg_porotha.jpg"
 import daalRice from "../../images/daal-and-rice.jpg"
 
+import { Link } from "react-router-dom"
+
 function Menu() {
     return (
         <div className="page-container" id="menu">
@@ -64,9 +66,9 @@ function MenuGalleryItem({image, name}) {
     return (
         <div className="menu-gallery-item">
             <img src={image} alt={name}/>
-            <a href="#" className="item-link">
+            <Link to="#" className="item-link">
                 <span className="item-name">{name}</span>
-            </a>
+            </Link>
         </div>
     )
 }
