@@ -1,18 +1,20 @@
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-scroll'
 
 function NavBar({ links }) {
     return (
-        <div className="nav-container shadow-lg">
+        <div className="nav-container shadow-xl">
             <nav>
                 <ul className="nav-links">
+                    {/* Need page id here! */}
                     {links.map(link => 
-                        <NavLink 
+                        <Link 
                             className="nav-link" 
                             key={link} 
-                            to={`/${link.toLowerCase()}`}
+                            to={link.toLowerCase()}
+                            smooth={true}
                         >
                             {link}
-                        </NavLink>
+                        </Link>
                     )}                             
                 </ul>
             </nav>

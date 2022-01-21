@@ -1,6 +1,16 @@
+// hours of operation for a particular day
+function DayHours({ day, hours }) {
+    return (
+        <tr className="table-row">
+            <td className="day">{day}</td>
+            <td>{hours}</td>
+        </tr>
+    )
+}
+
 function HoursOfOperation() {
     return (
-        <div className="page-container">
+        <div className="page-container" id="hours">
             <h2>Hours of Operation</h2>
             <table className="shadow-lg" id="schedule">
                 <tbody>
@@ -14,16 +24,6 @@ function HoursOfOperation() {
                 </tbody>
             </table>
         </div>
-    )
-}
-
-// hours of operation for a particular day
-function DayHours({ day, hours }) {
-    return (
-        <tr className="table-row">
-            <td className="day">{day}</td>
-            <td>{hours}</td>
-        </tr>
     )
 }
 

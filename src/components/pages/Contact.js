@@ -2,7 +2,7 @@ import { Form, FormInput, FormTextArea } from '../Form'
 
 function Contact() {
     return (
-        <div className="form-container">
+        <div className="page-container" id="contact">
             <h2>Contact</h2>
             <Form>
                 <div className="form-fields">
