@@ -1,50 +1,45 @@
-/* App header */
+/* General styles */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
 .App {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-.App-header {
+/* Navigation bar */
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #166534;
+    padding: 1rem 0rem;
     text-align: center;
-    background-color: #22c55e;
 }
 
-.restaurant-icon {
-    padding-left: 0.35rem;
+.nav-links {
+    margin: 0;
+    padding: 0;
 }
 
-#phone {
-    order: 2;
-}
-
-.social-media {
-    margin-left: auto;
-    margin-right: 0.5rem;
-    order: 3;
-}
-
-.social-media i {
-    padding: 0rem 0.5rem;
-}
-
-.restaurant-contact {
-    padding: 0 1rem;
-}
-
-/* Restaurant Info */
-.restaurant-info {
-    display: flex;
-    background-color: #15803d;
+.nav-link {
+    text-decoration: none;
     color: white;
-    padding: 0.5rem;
-    white-space: nowrap;
+    padding: 0rem 2rem;
+    font-size: large;
 }
 
-@media only screen and (max-width: 768px) {
-    #address {
-        display: none;
-    }
+.nav-link:hover {
+    color: whitesmoke;
 }
 
 /* Home page */
@@ -74,22 +69,22 @@
     background-color: rgba(241, 241, 241, 0.25);
 }
 
-#title {
+.header-container {
+    margin-top: 8em;
+}
+
+.header-container h1 {
     font-family: 'The Nautigal', cursive;
     font-size: 10em;
     margin: 0;
     text-align: center;
 }
 
-#subtitle {
+.address {
     font-family: 'The Nautigal', cursive;
     text-align: center;
     font-size: 3em;
     margin: 0 auto;
-}
-
-.heading-text {
-    margin-top: 8em;
 }
 
 .arrow {
@@ -123,17 +118,6 @@
     100% { transform:translate(0,20px) rotate(45deg); opacity: 0; }
 }
 
-/* About page */
-.about-text {
-    max-width: 40vw;
-}
-
-@media only screen and (max-width: 768px) {
-    .about-text {
-        max-width: 100%;
-    }
-}
-
 /* Hours */
 #schedule {
     background-color: white;
@@ -146,42 +130,10 @@
 }
 
 .day {
-    padding-right: 2em;
-}
-
-/* Navigation bar */
-.nav-container {
-    padding: 1rem 0rem;
-    margin: 0 auto;
-}
-
-.nav-links {
-    margin: 0;
-    padding: 0;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: black;
-    padding: 0rem 2rem;
-    font-size: larger;
-}
-
-.link {
-    text-decoration: none;
-    color: black;
-}
-
-.nav-link:hover {
-    color: #333;
+    padding-right: 4rem;
 }
 
 /* Contact Form */
-.form-container {
-    padding: 1rem;
-    margin: 8px;
-}
-
 .form-fields {
     max-width: 50%;
     margin-bottom: 1.25em;
@@ -229,7 +181,8 @@
     font-size: medium;
     color: white;
     border: none;
-    background-color: #22c55e;
+    background-color: black;
+    /* background-color: #22c55e; */
     cursor: pointer;
     width: 10rem;
 }
@@ -237,23 +190,12 @@
 /* Footer */
 #footer {
     margin-top: auto;
-    background-color: #15803d;
+    background-color: black;
+    /* background-color: #15803d; */
     color: white;
     padding: 0.5em 0em;
     text-align: center;
     width: 100%;
-}
-
-/* General styles */
-* {
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #bbf7d0;
-    height: 100vh;
 }
 
 /* Shadow around a container */
@@ -271,6 +213,11 @@ body {
         var(--tw-shadow);
 }
 
+.shadow-xl {
+    z-index: 10;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
 .page-container {
-    margin: 3rem 2rem; 
+    margin: 1rem 2rem; 
 }
