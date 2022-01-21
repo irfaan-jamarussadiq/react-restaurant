@@ -9,7 +9,7 @@ function Home() {
                     <h1>Latheeth</h1>
                     <p class="address">12345 Example Street</p>
                     <p class="address">City, State 12345</p>
-                    <Link to="about" smooth={true}>
+                    <Link to="about" smooth={true} offset={-70}>
                         <div className="arrow" />
                     </Link>
                 </div>
