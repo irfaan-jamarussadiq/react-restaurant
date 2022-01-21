@@ -6,36 +6,37 @@ function Menu() {
     return (
         <div className="page-container" id="menu">
             <h2>Menu</h2>
-            <div className="menu-gallery">
+            <MenuGallery title="Appetizers">
                 <div className="menu-gallery-row">
-                    <div className="menu-gallery-item">
-                        <img src={masalaDosa} alt="masala dosa"/>
-                        <span className="item-name">Breakfast</span>
-                    </div>
-                    <div className="menu-gallery-item">
-                        <img src={idliVada} alt="idli vada"/>
-                        <span className="item-name">Lunch</span>
-                    </div>
-                    <div className="menu-gallery-item">
-                        <img src={samosa} alt="samosa"/>
-                        <span className="item-name">Dinner</span>
-                    </div>
+                    <MenuGalleryItem image={samosa} name="Samosa" />
                 </div>
+            </MenuGallery>
+            <MenuGallery title="Breakfast">
                 <div className="menu-gallery-row">
-                    <div className="menu-gallery-item">
-                        <img src={masalaDosa} alt="masala dosa"/>
-                        <span className="item-name">Breakfast</span>
-                    </div>
-                    <div className="menu-gallery-item">
-                        <img src={idliVada} alt="idli vada"/>
-                        <span className="item-name">Lunch</span>
-                    </div>
-                    <div className="menu-gallery-item">
-                        <img src={samosa} alt="samosa"/>
-                        <span className="item-name">Dinner</span>
-                    </div>
+                    <MenuGalleryItem image={masalaDosa} name="Masala Dosa" />
+                    <MenuGalleryItem image={idliVada} name="Idli Vada" />
                 </div>
-            </div>
+            </MenuGallery>
+        </div>
+    )
+}
+
+function MenuGallery({ title, children }) {
+    return (
+        <>
+            <h3>{title}</h3>
+            <div className="menu-gallery">{children}</div>
+        </>
+    )
+}
+
+function MenuGalleryItem({image, name}) {
+    return (
+        <div className="menu-gallery-item">
+            <img src={image} alt={name}/>
+            <a href="#" className="item-link">
+                <span className="item-name">{name}</span>
+            </a>
         </div>
     )
 }
