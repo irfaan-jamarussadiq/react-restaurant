@@ -1,17 +1,3 @@
-import samosa from "../../images/samosa.jpg"
-import idliVada from "../../images/idli_vada.jfif"
-import masalaDosa from "../../images/Masala Dosa.jfif"
-import parippuVada from "../../images/parippu-vada.jpg"
-import pakora from "../../images/pakora.jpg"
-import gulabJamun from "../../images/gulab jamun.jpg"
-import bajji from "../../images/bajji.jpg"
-import eggIdiyappam from "../../images/egg_idiyappam.jpg"
-import puttu from "../../images/puttu.jpg"
-import vegBiryani from "../../images/veg-biryani.jpg"
-import eggBiryani from "../../images/eggBiryani.jfif"
-import eggPorotha from "../../images/egg_porotha.jpg"
-import daalRice from "../../images/daal-and-rice.jpg"
-
 import { Link } from "react-router-dom"
 
 function Menu() {
@@ -20,33 +6,33 @@ function Menu() {
             <h2>Menu</h2>
             <MenuGallery title="Appetizers">
                 <div className="menu-gallery-row">
-                    <MenuGalleryItem image={samosa} name="Samosa" />
-                    <MenuGalleryItem image={parippuVada} name="Parippu Vada" />
-                    <MenuGalleryItem image={pakora} name="Pakora" />
+                    <MenuGalleryItem imageName="samosa.jpg" itemName="Samosa" />
+                    <MenuGalleryItem imageName="parippu-vada.jpg" itemName="Parippu Vada" />
+                    <MenuGalleryItem imageName="pakora.jpg" itemName="Pakora" />
                 </div>
                 <div className="menu-gallery-row">
-                    <MenuGalleryItem image={bajji} name="Bajji" />
-                    <MenuGalleryItem image={gulabJamun} name="Gulab Jamun" />
+                    <MenuGalleryItem imageName="bajji.jpg" itemName="Bajji" />
+                    <MenuGalleryItem imageName="gulab jamun.jpg" itemName="Gulab Jamun" />
                 </div>
             </MenuGallery>
             <MenuGallery title="Breakfast">
                 <div className="menu-gallery-row">
-                    <MenuGalleryItem image={masalaDosa} name="Masala Dosa" />
-                    <MenuGalleryItem image={idliVada} name="Idli Vada" />
-                    <MenuGalleryItem image={eggIdiyappam} name="Idiyappam with Egg Curry" />
+                    <MenuGalleryItem imageName="Masala Dosa.jfif" itemName="Masala Dosa" />
+                    <MenuGalleryItem imageName="idli_vada.jfif" itemName="Idli Vada" />
+                    <MenuGalleryItem imageName="egg_idiyappam.jpg" itemName="Idiyappam with Egg Curry" />
                 </div>
                 <div className="menu-gallery-row">
-                    <MenuGalleryItem image={puttu} name="Puttu with Kadala Curry" />
+                    <MenuGalleryItem imageName="puttu.jpg" itemName="Puttu with Kadala Curry" />
                 </div>
             </MenuGallery>
             <MenuGallery title="Lunch Entrées">
                 <div className="menu-gallery-row">
-                    <MenuGalleryItem image={vegBiryani} name="Vegetable Biryani" />
-                    <MenuGalleryItem image={eggBiryani} name="Egg Biryani" />
+                    <MenuGalleryItem imageName="veg-biryani.jpg" itemName="Vegetable Biryani" />
+                    <MenuGalleryItem imageName="eggBiryani.jfif" itemName="Egg Biryani" />
                 </div>
                 <div className="menu-gallery-row">
-                    <MenuGalleryItem image={eggPorotha} name="Egg Porotha" />
-                    <MenuGalleryItem image={daalRice} name="Daal and Rice" />
+                    <MenuGalleryItem imageName="egg_porotha.jpg" itemName="Egg Porotha" />
+                    <MenuGalleryItem imageName="daal-and-rice.jpg" itemName="Daal and Rice" />
                 </div>
             </MenuGallery>
         </div>
@@ -62,12 +48,12 @@ function MenuGallery({ title, children }) {
     )
 }
 
-function MenuGalleryItem({image, name}) {
+function MenuGalleryItem({imageName, itemName}) {
     return (
         <div className="menu-gallery-item">
-            <img src={image} alt={name}/>
+            <img src={`images/${imageName}`} alt={itemName}/>
             <Link to="#" className="item-link">
-                <span className="item-name">{name}</span>
+                <span className="item-name">{itemName}</span>
             </Link>
         </div>
     )
