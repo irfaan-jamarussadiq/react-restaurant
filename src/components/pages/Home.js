@@ -1,4 +1,3 @@
-import home from '../../images/home.jpg'
 import { Link } from 'react-scroll'
 
 function Home() {
@@ -14,7 +13,7 @@ function Home() {
                     </Link>
                 </div>
             </div>
-            <img src={home} alt="Indian vegetarian food"/>
+            <img src="images/home.jpg" alt="Indian vegetarian food"/>
         </div>
     )
 }
