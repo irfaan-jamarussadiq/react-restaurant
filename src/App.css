@@ -7,10 +7,6 @@
 }
   
 /* Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-    width: 12px;
-}
-
 *::-webkit-scrollbar-thumb {
     background-color: #333;
     border-radius: 20px;
@@ -52,6 +48,12 @@ body {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 480px) {
+    .nav-link {
+        padding: 0vw 5vw;
+    }
+}
+
 .nav-link:hover {
     color: whitesmoke;
 }
@@ -88,7 +90,8 @@ body {
 
 .title-container {
     background-color: #86efac;
-    width: 500px;
+    width: 480px;
+    max-width: 100%;
     margin: 0 auto;
     padding-bottom: 2em;
     border-radius: 1rem;
