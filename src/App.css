@@ -90,7 +90,7 @@ body {
 
 .title-container {
     background-color: #86efac;
-    width: 480px;
+    width: 420px;
     max-width: 100%;
     margin: 0 auto;
     padding-bottom: 2em;
@@ -101,6 +101,7 @@ body {
     font-family: 'The Nautigal', cursive;
     font-size: 10em;
     margin: 0;
+    margin-right: 2rem;
     text-align: center;
 }
 
@@ -271,9 +272,19 @@ body {
     background-color: black;
     /* background-color: #15803d; */
     color: white;
-    padding: 0.5em 0em;
+    padding: 1em 0em;
     text-align: center;
     width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+    #pipe {
+        display: none;
+    }
+
+    .footer-info {
+        display: block;
+    }
 }
 
 /* Shadow around a container */

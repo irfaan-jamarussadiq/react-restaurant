@@ -2,7 +2,9 @@ function Footer({ year, company, developer }) {
     return (
         <div id="footer">
             <footer>
-                <p>© {year} {company} | Developed by {developer}</p>
+                <span className="footer-info">© {year} {company}</span>
+                <span className="footer-info" id="pipe"> | </span>
+                <span className="footer-info"> Developed by {developer}</span>
             </footer>
         </div>
     )
