@@ -40,13 +40,13 @@ body {
 }
 
 .nav-links {
-    margin: 0;
     padding: 0;
 }
 
 .nav-link {
     text-decoration: none;
     color: white;
+    margin: 0 auto;
     padding: 0rem 2rem;
     font-size: large;
     cursor: pointer;
@@ -88,7 +88,7 @@ body {
 
 .title-container {
     background-color: #86efac;
-    width: 480px;
+    width: 500px;
     margin: 0 auto;
     padding-bottom: 2em;
     border-radius: 1rem;

@@ -4,7 +4,7 @@ function NavBar({ links }) {
     return (
         <div className="nav-container shadow-xl">
             <nav>
-                <ul className="nav-links">
+                <div className="nav-links">
                     {links.map(link => 
                         <Link 
                             className="nav-link" 
@@ -16,7 +16,7 @@ function NavBar({ links }) {
                             {link}
                         </Link>
                     )}                             
-                </ul>
+                </div>
             </nav>
         </div>
     )
