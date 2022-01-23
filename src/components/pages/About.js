@@ -2,10 +2,14 @@ function About() {
     return (
         <div className="page-container" id="about">
             <h2>About</h2>
-            <p className="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut enim blandit volutpat maecenas volutpat blandit. Ullamcorper a lacus vestibulum sed arcu non odio euismod. Risus quis varius quam quisque id diam vel quam elementum. Sed odio morbi quis commodo odio. Nunc mi ipsum faucibus vitae aliquet nec. Ornare lectus sit amet est placerat in. Libero id faucibus nisl tincidunt eget nullam non. Magna fringilla urna porttitor rhoncus dolor purus. Proin fermentum leo vel orci porta non pulvinar neque laoreet.</p>        
-            <p className="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut enim blandit volutpat maecenas volutpat blandit. Ullamcorper a lacus vestibulum sed arcu non odio euismod. Risus quis varius quam quisque id diam vel quam elementum. Sed odio morbi quis commodo odio. </p>   
-            <p className="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut enim blandit volutpat maecenas volutpat blandit. Ullamcorper a lacus vestibulum sed arcu non odio euismod. Risus quis varius quam quisque id diam vel quam elementum. Sed odio morbi quis commodo odio. Nunc mi ipsum faucibus vitae aliquet nec. Ornare lectus sit amet est placerat in. Libero id faucibus nisl tincidunt eget nullam non. Magna fringilla urna porttitor rhoncus dolor purus. Proin fermentum leo vel orci porta non pulvinar neque laoreet.</p>        
-            <p className="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut enim blandit volutpat maecenas volutpat blandit. Ullamcorper a lacus vestibulum sed arcu non odio euismod. Risus quis varius quam quisque id diam vel quam elementum. Sed odio morbi quis commodo odio. </p>   
+            <p className="about-text">
+                Latheeth is a restaurant located in the United States aimed at 
+                opening the eyes of Americans to the plethora of
+                mouth-watering vegetarian cuisines available in South India.
+                Whether you want to try out pakora for the first time or indulge
+                in some egg biryani, Latheeth has all the food you need to get
+                the South Indian vegetarian experience!
+            </p>        
         </div>
     )
 }
