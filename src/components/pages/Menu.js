@@ -51,7 +51,7 @@ function MenuGallery({ title, children }) {
 function MenuGalleryItem({imageName, itemName}) {
     return (
         <div className="menu-gallery-item">
-            <img src={`images/${imageName}`} alt={itemName}/>
+            <img src={`images/${imageName}`} alt={itemName} loading="lazy"/>
             <Link to="#" className="item-link">
                 <span className="item-name">{itemName}</span>
             </Link>

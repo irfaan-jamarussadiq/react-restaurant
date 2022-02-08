@@ -15,7 +15,7 @@ function Home() {
                     </Link>
                 </div>
             </div>
-            <img src="images/sadhya.jpg" alt="Indian vegetarian food"/>
+            <img src="images/sadhya.jpg" alt="Indian vegetarian food" loading="lazy"/>
         </div>
     )
 }
