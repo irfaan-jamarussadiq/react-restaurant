@@ -2,8 +2,7 @@ import { Link } from "react-router-dom"
 
 function Menu() {
     return (
-        <div className="page-container" id="menu">
-            <h2>Menu</h2>
+        <div id="menu">
             <MenuGallery title="Appetizers">
                 <div className="menu-gallery-row">
                     <MenuGalleryItem imageName="samosa.jpg" itemName="Samosa" />
