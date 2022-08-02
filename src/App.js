@@ -1,6 +1,6 @@
 import './App.css'
 import Order from './components/pages/Order'
-import { NavBar, Footer, Home, About, HoursOfOperation, Menu, Contact } from './index'
+import { NavBar, Footer, Home, About, HoursOfOperation, Contact } from './index'
 
 function App() {
   return (

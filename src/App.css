@@ -161,12 +161,17 @@ body {
 /* Order */
 .order-gallery {
     display: flex;
+    flex-direction: column;
 }
 
 @media only screen and (max-width: 768px) {
-    .order-gallery {
+    .order-gallery, .order-row {
         flex-direction: column;
     }
+}
+
+.order-row {
+    display: flex;
 }
 
 .order-card {
@@ -187,6 +192,7 @@ body {
 
 .order-card img {
     height: 200px;
+    max-width: 100%;
     margin: 0;
 }
 
@@ -199,60 +205,6 @@ body {
 
 .order-quantity {
     margin: 0 0.5em;
-}
-
-/* Menu */
-.menu-gallery {
-    display: flex;
-    flex-direction: column;
-}
-
-.menu-gallery-row {
-    display: flex;
-    width: 100%;
-}
-
-.menu-gallery-item {
-    position: relative;
-    width: 33%;
-}
-
-.item-link {
-    text-decoration: none;
-    color: black;
-}
-
-.item-link:hover {
-    color: #333;
-}
-
-.item-name {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    background-color: #22c55e;
-    padding: 0.75rem 0rem;
-    margin: 0.75rem 1rem;
-    border-radius: 1rem;
-}
-
-.menu-gallery-item img {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-}
-
-@media only screen and (max-width: 768px) {
-    .menu-gallery-row {
-        flex-wrap: wrap;
-    }
-
-    .menu-gallery-item {
-        width: 100%;
-        height: auto;
-    }
 }
 
 /* Contact Form */
