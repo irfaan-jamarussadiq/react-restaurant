@@ -192,16 +192,9 @@ body {
 
 .order-selection {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-}
-
-.order-quantity-container {
-    margin-left: 1em;
 }
 
 .order-quantity {

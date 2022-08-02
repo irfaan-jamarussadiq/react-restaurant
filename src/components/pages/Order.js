@@ -4,8 +4,7 @@ function Order() {
     return (
         <div id="order" className="page-container">
             <h2>Order Now</h2>
-            <h3>Appetizers</h3>
-            <div className="order-gallery">
+            <OrderSection title="Appetizers">
                 <OrderItem
                     imageName="bajji.jpg"
                     itemName="Aloo Bajji"
@@ -17,15 +16,27 @@ function Order() {
                     itemName="Pakora"
                     description="Crispy and delicious pakora"
                     price="$3.00" />
-
+            </OrderSection>
+            <OrderSection title="Lunch Entrées">
                 <OrderItem
                     imageName="daal-and-rice.jpg"
                     itemName="Daal and Rice"
                     description="Daal lentils over basmati rice"
                     price="$10.00" />
-            </div>
+            </OrderSection>
             <button className="order-button">Submit Order</button>
             <Menu />
+        </div>
+    )
+}
+
+function OrderSection({ title, children }) {
+    return (
+        <div className="order-section">
+            <h3>{title}</h3>
+            <div className="order-gallery">
+                {children}
+            </div>
         </div>
     )
 }
@@ -38,20 +49,22 @@ function OrderItem({ imageName, itemName, description, price }) {
             <div className="order-content">
                 <p className="order-description">{description}</p>
                 <div className="order-selection">
-                    <div className="order-quantity-container">
-                        <label>Quantity</label>
-                        <select className="order-quantity">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
+                    <OrderQuantity options={[1,2,3,4,5]} />
                     <button className="order-button">Add to Order</button>
                 </div>
             </div>
 
+        </div>
+    )
+}
+
+function OrderQuantity({ options }) {
+    return (
+        <div className="order-quantity-container">
+            <label>Quantity</label>
+            <select className="order-quantity">
+                {options.map(option => <option>{option}</option>)}
+            </select>
         </div>
     )
 }
