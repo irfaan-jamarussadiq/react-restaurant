@@ -158,6 +158,56 @@ body {
     padding-right: 4rem;
 }
 
+/* Order */
+.order-gallery {
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .order-gallery {
+        flex-direction: column;
+    }
+}
+
+.order-card {
+    position: relative;
+    padding: 1em;
+    margin: 0.25em;
+    max-width: 300px;
+}
+
+.order-button {
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    margin: 0.5em;
+    background-color: #22c55e;
+    cursor: pointer;
+    border: none;
+}
+
+.order-card img {
+    height: 200px;
+    margin: 0;
+}
+
+.order-selection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.order-quantity-container {
+    margin-left: 1em;
+}
+
+.order-quantity {
+    margin: 0 0.5em;
+}
+
 /* Menu */
 .menu-gallery {
     display: flex;
