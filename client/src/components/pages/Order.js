@@ -18,7 +18,7 @@ function OrderSection({ sectionName }) {
         <div className="order-section">
             <h3>{sectionName}</h3>
             <div className="order-gallery">
-                {sectionItems.map(item => <OrderItem item={item} />)}
+                {sectionItems.map(item => <OrderItem key={item.image} item={item} />)}
             </div>
         </div>
     )

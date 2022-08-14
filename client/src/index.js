@@ -1,16 +1,17 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom'
 import App from './App'
 
-ReactDOM.render(
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(
   <React.StrictMode>
     <Router>
-      <App />
+      <App tab="home" />
     </Router>
-  </React.StrictMode>,
-  document.getElementById('root')
-)
+  </React.StrictMode>
+);
 
 export { default as NavBar } from './components/NavBar'
 export { default as Footer } from './components/Footer'
