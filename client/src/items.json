@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Aloo Bajji",
+        "image": "bajji.jpg",
+        "price": 4.00
+    },
+    {
+        "name": "Pakora",
+        "image": "pakora.jpg",
+        "price": 3.00
+    },
+    {
+        "name": "Gulab Jamun",
+        "image": "gulab jamun.jpg",
+        "price": 2.00
+    },
+    {
+        "name": "Parippu Vada",
+        "image": "parippu-vada.jpg",
+        "price": 1.00
+    },
+    {
+        "name": "Samosa",
+        "image": "samosa.jpg",
+        "price": 2.00
+    }
+]
