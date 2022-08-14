@@ -159,6 +159,10 @@ animation:         ca3_fade_move_down 2s ease-in-out infinite;
 }
 
 /* Order */
+body {
+  background-color: #86efac;
+}
+
 .order-gallery {
   display: flex;
   flex-direction: row;
@@ -176,7 +180,9 @@ animation:         ca3_fade_move_down 2s ease-in-out infinite;
 }
 
 .order-card {
+  background-color: whitesmoke;
   position: relative;
+  border-radius: 0.5em;
   padding: 1em;
   margin: 0.25em;
   max-width: 300px;
