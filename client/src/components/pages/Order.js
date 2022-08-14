@@ -4,19 +4,21 @@ function Order() {
     return (
         <form id="order" className="page-container">
             <h2>Order Now</h2>
-            {Items.map(item => <OrderItem item={item} />)}
-            <p>Total: $0.00 </p>
+            <OrderSection sectionName="Appetizers" />             
+            <OrderSection sectionName="Breakfast" />
+            <OrderSection sectionName="Lunch Entrées" />                       
             <button type="submit" id="submit-order" className="order-button">Submit Order</button>
         </form>
     )
 }
 
-function OrderSection({ title, children }) {
+function OrderSection({ sectionName }) {
+    const sectionItems = Items.filter(item => item["menu-section"] === sectionName)
     return (
         <div className="order-section">
-            <h3>{title}</h3>
+            <h3>{sectionName}</h3>
             <div className="order-gallery">
-                {children}
+                {sectionItems.map(item => <OrderItem item={item} />)}
             </div>
         </div>
     )

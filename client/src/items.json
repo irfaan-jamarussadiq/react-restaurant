@@ -1,27 +1,87 @@
 [
     {
         "name": "Aloo Bajji",
+        "description": "Crispy and delicious bajji made with besan flour, cornflour, potato, and spices",
         "image": "bajji.jpg",
-        "price": 4.00
+        "price": 4.00,
+        "menu-section": "Appetizers"
     },
     {
-        "name": "Pakora",
+        "name": "Pakora",        
+        "description": "Crispy fritters made with onions, potatoes, gram flour, and garam masala",
         "image": "pakora.jpg",
-        "price": 3.00
+        "price": 3.00,
+        "menu-section": "Appetizers"
     },
     {
         "name": "Gulab Jamun",
         "image": "gulab jamun.jpg",
-        "price": 2.00
+        "description": "Fried balls of a dough made from milk solids and semolina, soaked with an aromatic syrup spiced with green cardamom, rose water, saffron, and more",
+        "price": 2.00,
+        "menu-section": "Appetizers"
     },
     {
         "name": "Parippu Vada",
+        "description": "Crispy and crunchy fritters made with chana daal, dried red chillies, ginger, shallots, and curry leaves",
         "image": "parippu-vada.jpg",
-        "price": 1.00
+        "price": 1.00,
+        "menu-section": "Appetizers"
     },
     {
         "name": "Samosa",
+        "description": "Commonly eaten Indian snack made with potatoes, peas, ghee, chilli powder, garam masala, and carom seeds",
         "image": "samosa.jpg",
-        "price": 2.00
+        "price": 2.00,
+        "menu-section": "Appetizers"
+    },
+
+    {
+        "name": "Masala Dosa",
+        "image": "Masala Dosa.jfif",
+        "price": 5.00,
+        "menu-section": "Breakfast"
+    },
+    {
+        "name": "Idli Vada",
+        "image": "idli_vada.jfif",
+        "price": 8.00,
+        "menu-section": "Breakfast"
+    },
+    {
+        "name": "Iddiyappam with Egg Curry",
+        "image": "egg_idiyappam.jpg",
+        "price": 12.00,
+        "menu-section": "Breakfast"
+    },
+    {
+        "name": "Puttu with Kadala Curry",
+        "image": "puttu.jpg",
+        "price": 4.00,
+        "menu-section": "Breakfast"
+    },
+
+    {
+        "name": "Vegetable Biryani",
+        "image": "veg-biryani.jpg",
+        "price": 13.00,
+        "menu-section": "Lunch Entrées"
+    },
+    {
+        "name": "Egg Biryani",
+        "image": "eggBiryani.jfif",
+        "price": 15.00,
+        "menu-section": "Lunch Entrées"
+    },
+    {
+        "name": "Egg Porotha",
+        "image": "egg_porotha.jpg",
+        "price": 11.00,
+        "menu-section": "Lunch Entrées"
+    },
+    {
+        "name": "Daal and Rice",
+        "image": "daal-and-rice.jpg",
+        "price": 9.00,
+        "menu-section": "Lunch Entrées"
     }
 ]
