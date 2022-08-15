@@ -19,7 +19,7 @@ root.render(
 
 export { default as NavBar } from './components/NavBar'
 export { default as Footer } from './components/Footer'
-export { default as Home } from './components/pages/Home'
+export { default as LandingPage } from './components/pages/LandingPage'
 export { default as About } from './components/pages/About'
 export { default as Contact } from './components/pages/Contact'
 export { default as HoursOfOperation } from './components/pages/HoursOfOperation'

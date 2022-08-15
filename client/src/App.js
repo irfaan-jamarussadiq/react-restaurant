@@ -1,12 +1,12 @@
 import './App.css'
 import Order from './components/pages/Order'
-import { NavBar, Footer, Home, About, HoursOfOperation, Contact } from './index'
+import { NavBar, Footer, LandingPage, About, HoursOfOperation, Contact } from './index'
 
 function App() {
   return (
     <div className="App">
       <NavBar links={['About', 'Hours', 'Order', 'Contact']}/>
-      <Home />
+      <LandingPage />
       <About />
       <HoursOfOperation />
       <Order />

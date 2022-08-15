@@ -4,19 +4,14 @@
   /* Works on Firefox */
   scrollbar-width: thin;
   scrollbar-color: #333 whitesmoke;
+  margin: 0;
+  padding: 0;
 }
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar-thumb {
   background-color: #333;
   border-radius: 20px;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  padding-top: 5vh;
-  height: 100vh;
 }
 
 .App {
@@ -60,56 +55,42 @@ body {
 }
 
 /* Home page */
-.home-page {
-  position: relative;
+#home {
   display: flex;
   justify-items: center;
   align-items: center;
   flex-direction: column;
-  height: 95vh;
-  margin: 0;
-  padding: 0;
+  margin-top: 4em;
 }
 
-.home-page img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.landing-page-image-wrapper {
+  overflow: hidden;
+  max-width: 100%;
 }
 
-.img-overlay {
+.landing-page-content {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.header-container {
-  margin-top: 8em;
-}
-
-.title-container {
-  background-color: #86efac;
+  margin-top: 25vh;
   width: 420px;
   max-width: 100%;
-  margin: 0 auto;
-  padding-bottom: 2em;
-  border-radius: 1rem;
 }
 
-.header-container h1 {
+#logo {
+  background-color: #86efac;
+  padding-bottom: 2em;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+#logo .name {
   font-family: 'The Nautigal', cursive;
   font-size: 10em;
   margin: 0;
   margin-right: 2rem;
-  text-align: center;
 }
 
-.address {
-  text-align: center;
+#logo .address {
   font-size: 1.5em;
-  margin: 0 auto;
 }
 
 .arrow {
@@ -118,9 +99,9 @@ body {
   width: 24px;
   height: 24px;
   margin: 8em auto;
--webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
--moz-animation:    ca3_fade_move_down 2s ease-in-out infinite;
-animation:         ca3_fade_move_down 2s ease-in-out infinite;
+  -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+  -moz-animation:    ca3_fade_move_down 2s ease-in-out infinite;
+  animation:         ca3_fade_move_down 2s ease-in-out infinite;
 }
 
 /* 
@@ -159,7 +140,7 @@ animation:         ca3_fade_move_down 2s ease-in-out infinite;
 }
 
 /* Order */
-body {
+#order-page {
   background-color: #86efac;
 }
 
@@ -317,5 +298,5 @@ body {
 }
 
 .page-container {
-  margin: 1rem 2rem; 
+  padding: 1rem 2rem; 
 }
