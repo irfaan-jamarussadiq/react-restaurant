@@ -1,11 +1,18 @@
 import './App.css'
-import Order from './components/pages/Order'
-import { NavBar, Footer, LandingPage, About, HoursOfOperation, Contact } from './index'
+import {
+  NavBar,
+  Footer,
+  LandingPage,
+  About, 
+  HoursOfOperation, 
+  Order, 
+  Contact
+} from './index'
 
 function App() {
   return (
     <div className="App">
-      <NavBar links={['About', 'Hours', 'Order', 'Contact']}/>
+      <NavBar links={['About', 'Hours', 'Order', 'Contact']} />
       <LandingPage />
       <About />
       <HoursOfOperation />

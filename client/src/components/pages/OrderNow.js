@@ -1,6 +1,6 @@
 import Items from "../../items.json"
 
-function OrderNow() {
+function Menu() {
     return (
         <div className="page-container" id="order-page">
             <h1>Order Now</h1>
@@ -56,4 +56,4 @@ function OrderQuantity({ options }) {
     )
 }
 
-export default OrderNow
+export default Menu
