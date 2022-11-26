@@ -14,6 +14,10 @@
   border-radius: 20px;
 }
 
+h* {
+  margin: 0.25em;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -140,14 +144,22 @@
 }
 
 /* Order */
+.menu-title, .order-section-title {
+  color: whitesmoke;
+}
+
 #order-page {
-  background-color: #86efac;
+  background-color: #166534;
 }
 
 .order-gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.order-section {
+  margin-top: 1em;
 }
 
 @media only screen and (max-width: 768px) {
@@ -161,11 +173,13 @@
 }
 
 .order-card {
+  display: flex;
+  flex-direction: column;
   background-color: whitesmoke;
   position: relative;
   border-radius: 0.5em;
   padding: 1em;
-  margin: 0.25em;
+  margin: 0.5em 0.25em;
   max-width: 300px;
 }
 
@@ -174,7 +188,6 @@
   border-radius: 1em;
   margin: 0.5em;
   margin-right: 0em;
-  background-color: #22c55e;
   cursor: pointer;
   border: none;
 }
@@ -183,21 +196,36 @@
   padding: 1em 1.6em;
 }
 
+.order-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .order-card img {
   height: 200px;
   max-width: 100%;
-  margin: 0;
+}
+
+.order-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .order-selection {
   display: flex;
+  flex-grow: 1;
   width: 100%;
   justify-content: space-between;
   align-items: center;
 }
 
-.item-price {
-  float: right;
+.item-name {
+  font-size: 1.25em;
+}
+
+.item-name, .item-price {
+  font-weight: bold;
 }
 
 .order-quantity {

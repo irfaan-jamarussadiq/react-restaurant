@@ -3,7 +3,7 @@ import Items from "../../items.json"
 function Menu() {
     return (
         <div className="page-container" id="order-page">
-            <h1>Order Now</h1>
+            <h1 className="menu-title">Order Now</h1>
             <OrderSection sectionName="Appetizers" />             
             <OrderSection sectionName="Breakfast" />
             <OrderSection sectionName="Lunch Entrées" />                       
@@ -16,7 +16,7 @@ function OrderSection({ sectionName }) {
     const sectionItems = Items.filter(item => item["menu-section"] === sectionName)
     return (
         <div className="order-section">
-            <h3>{sectionName}</h3>
+            <h2 className="order-section-title">{sectionName}</h2>
             <div className="order-gallery">
                 {sectionItems.map(item => <OrderItem key={item.image} item={item} />)}
             </div>
@@ -27,15 +27,13 @@ function OrderSection({ sectionName }) {
 function OrderItem({ item }) {
     return (
         <div className="order-card shadow-lg">
-            <img src={`images/${item.image}`} alt={item.name} />
-            <h4>
-                {item.name}
-                <span className="item-price">
-                    {`$${item.price.toFixed(2)}`}
-                </span>
-            </h4>
+            <div>
+                <img src={`images/${item.image}`} alt={item.name} />
+            </div>
             <div className="order-content">
-                <p className="order-description">{item.description || ""}</p>
+                <div className="item-name">{item.name}</div>
+                <div className="item-price">{`$${item.price.toFixed(2)}`}</div>                    
+                <div>{item.description || ""}</div>
                 <div className="order-selection">
                     <OrderQuantity options={[1, 2, 3, 4, 5]} />
                     <button className="order-button">Add to Order</button>

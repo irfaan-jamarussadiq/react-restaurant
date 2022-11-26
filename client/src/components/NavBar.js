@@ -1,4 +1,5 @@
 import { Link } from 'react-scroll'
+import { Link as RouterLink } from 'react-router-dom'
 
 function NavBar({ links }) {
     return (
@@ -8,14 +9,14 @@ function NavBar({ links }) {
                     {links.map(link => {
                         if (link === "Order") {
                             return (
-                                <Link                                     
+                                <RouterLink                                     
                                     className="nav-link" 
                                     key={link} 
                                     to={link.toLowerCase()}
                                     target="_blank" rel="noopener noreferrer"
                                 >
                                     {link}
-                                </Link>
+                                </RouterLink>
                             )
                         } else {
                             return (

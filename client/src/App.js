@@ -5,7 +5,6 @@ import {
   LandingPage,
   About, 
   HoursOfOperation, 
-  Order, 
   Contact
 } from './index'
 
@@ -16,7 +15,6 @@ function App() {
       <LandingPage />
       <About />
       <HoursOfOperation />
-      <Order />
       <Contact />
       <Footer year='2022' company='Latheeth' developer='Irfaan Jamarussadiq' />
     </div>
