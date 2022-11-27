@@ -42,7 +42,7 @@ function OrderItem({ item }) {
                 <div className="order-selection">
                     <OrderQuantity options={[1, 2, 3, 4, 5]} />
                     <button 
-                        className={!ordered ? "order-button" : "order-button-selected"} 
+                        className={!ordered ? "order-button order-button-default" : "order-button order-button-selected"} 
                         onClick={orderItem}
                     >
                         {!ordered ? "Add to order" : "Remove from order"}
