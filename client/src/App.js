@@ -11,12 +11,12 @@ import {
 function App() {
   return (
     <div className="App">
-      <NavBar links={['About', 'Hours', 'Order', 'Contact']} />
+      <NavBar />
       <LandingPage />
       <About />
       <HoursOfOperation />
       <Contact />
-      <Footer year='2022' company='Latheeth' developer='Irfaan Jamarussadiq' />
+      <Footer />
     </div>
   )
 }

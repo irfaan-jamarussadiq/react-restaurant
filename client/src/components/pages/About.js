@@ -1,7 +1,7 @@
 function About() {
     return (
-        <div className="page-container" id="about">
-            <h2>About</h2>
+        <div className="page-section" id="about">
+            <h2 className="section-title">About</h2>
             <p className="about-text">
                 Latheeth is a restaurant located in the United States aimed at 
                 opening the eyes of Americans to the plethora of

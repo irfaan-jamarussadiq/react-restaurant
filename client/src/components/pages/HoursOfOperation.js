@@ -1,18 +1,9 @@
-// hours of operation for a particular day
-function DayHours({ day, hours }) {
-    return (
-        <tr className="table-row">
-            <td className="day">{day}</td>
-            <td>{hours}</td>
-        </tr>
-    )
-}
+import PageSection from "../PageSection"
 
 function HoursOfOperation() {
     return (
-        <div className="page-container" id="hours">
-            <h2>Hours of Operation</h2>
-            <table className="shadow-lg" id="schedule">
+        <PageSection title="Hours of Operation" id="hours">
+            <table id="schedule">
                 <tbody>
                     <DayHours day="Monday" hours="9:00am - 5:00pm"/>
                     <DayHours day="Tuesday" hours="Closed"/>
@@ -23,7 +14,17 @@ function HoursOfOperation() {
                     <DayHours day="Sunday" hours="9:00am - 3:00pm"/>
                 </tbody>
             </table>
-        </div>
+        </PageSection>
+    )
+}
+
+// hours of operation for a particular day
+function DayHours({ day, hours }) {
+    return (
+        <tr className="table-row">
+            <td className="day">{day}</td>
+            <td>{hours}</td>
+        </tr>
     )
 }
 
