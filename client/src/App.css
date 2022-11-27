@@ -183,13 +183,19 @@ h* {
   max-width: 300px;
 }
 
-.order-button {
+.order-button, .order-button-selected {
   padding: 0.5em 1em;
   border-radius: 1em;
   margin: 0.5em;
   margin-right: 0em;
   cursor: pointer;
+  background-color: #166534;
+  color: whitesmoke;
   border: none;
+}
+
+.order-button-selected {
+  background-color: #991b1b;
 }
 
 #submit-order {

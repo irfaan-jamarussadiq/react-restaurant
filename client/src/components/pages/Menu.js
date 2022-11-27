@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Items from "../../items.json"
 
 function Menu() {
@@ -25,6 +26,10 @@ function OrderSection({ sectionName }) {
 }
 
 function OrderItem({ item }) {
+
+    const [ordered, setOrdered] = useState(false);
+    const orderItem = () => setOrdered(!ordered);
+
     return (
         <div className="order-card shadow-lg">
             <div>
@@ -36,7 +41,12 @@ function OrderItem({ item }) {
                 <div>{item.description || ""}</div>
                 <div className="order-selection">
                     <OrderQuantity options={[1, 2, 3, 4, 5]} />
-                    <button className="order-button">Add to Order</button>
+                    <button 
+                        className={!ordered ? "order-button" : "order-button-selected"} 
+                        onClick={orderItem}
+                    >
+                        {!ordered ? "Add to order" : "Remove from order"}
+                    </button>
                 </div>
             </div>
         </div>
