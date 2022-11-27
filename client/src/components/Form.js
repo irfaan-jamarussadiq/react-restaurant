@@ -7,11 +7,13 @@ function Form({ handleSubmit, children }) {
     )
 }
 
-function FormInput({ type='text', label, id, required=false }) {
+function FormInput({ type="text", label, id, required=false }) {
     return (
         <div className="form-field"> 
-            <label htmlFor={id}>{label}</label>
-            <input id={id} type={type} required={required}/>
+            <label htmlFor={id}>
+                <p>{label}</p>
+                <input id={id} type={type} required={required}/>
+            </label>
         </div>
     )
 }
@@ -19,8 +21,10 @@ function FormInput({ type='text', label, id, required=false }) {
 function FormTextArea({ label, id }) {
     return (
         <div className="form-field">
-            <label htmlFor={id}>{label}</label>
-            <textarea id={id} wrap="hard"></textarea>
+            <label htmlFor={id}>
+                <p>{label}</p>
+                <textarea id={id} wrap="hard"></textarea>
+            </label>
         </div>
     )
 }
