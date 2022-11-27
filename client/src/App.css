@@ -14,10 +14,6 @@
   border-radius: 20px;
 }
 
-h* {
-  margin: 0.25em;
-}
-
 .App {
   display: flex;
   flex-direction: column;
@@ -31,26 +27,22 @@ h* {
   left: 0;
   width: 100%;
   background-color: #166534;
-  padding: 1rem 0rem;
+  padding: 1rem 0;
   text-align: center;
-}
-
-.nav-links {
-  padding: 0;
 }
 
 .nav-link {
   text-decoration: none;
   color: white;
   margin: 0 auto;
-  padding: 0rem 2rem;
+  padding: 0 2rem;
   font-size: large;
   cursor: pointer;
 }
 
 @media only screen and (max-width: 480px) {
   .nav-link {
-      padding: 0vw 5vw;
+      padding: 0 5vw;
   }
 }
 
@@ -97,6 +89,10 @@ h* {
   font-size: 1.5em;
 }
 
+.arrow-link {
+  cursor: pointer;
+}
+
 .arrow {
   border-right: 8px solid white;
   border-bottom: 8px solid white;
@@ -132,7 +128,7 @@ h* {
 #schedule {
   background-color: white;
   line-height: 1.5em;
-  padding: 0.25rem 0.5em;
+  padding: 0.25rem 0;
 }
 
 .table-row {
@@ -183,7 +179,7 @@ h* {
   max-width: 300px;
 }
 
-.order-button {
+.order-btn {
   padding: 0.5em 1em;
   border-radius: 1em;
   margin: 0.5em;
@@ -192,13 +188,17 @@ h* {
   border: none;
 }
 
-.order-button.default {  
+.order-btn.default {  
   background-color: #166534;
   color: whitesmoke;
 }
 
-.order-button.selected {
+.order-btn.selected {
   background-color: #991b1b;
+  color: whitesmoke;
+}
+
+.order-total {
   color: whitesmoke;
 }
 
@@ -299,7 +299,7 @@ h* {
 #footer {
   margin-top: auto;
   background-color: black;
-  color: white;
+  color: whitesmoke;
   padding: 1em 0em;
   text-align: center;
   width: 100%;
@@ -335,6 +335,10 @@ h* {
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
-.page-container {
-  padding: 1rem 2rem; 
+.page-section {
+  padding: 1rem 2rem;
+}
+
+.section-title {
+  margin-top: 0.25em;
 }
