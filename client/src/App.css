@@ -192,12 +192,12 @@ h* {
   border: none;
 }
 
-.order-button-default {  
+.order-button.default {  
   background-color: #166534;
   color: whitesmoke;
 }
 
-.order-button-selected {
+.order-button.selected {
   background-color: #991b1b;
   color: whitesmoke;
 }

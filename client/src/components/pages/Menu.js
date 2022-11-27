@@ -27,8 +27,17 @@ function OrderSection({ sectionName }) {
 
 function OrderItem({ item }) {
 
-    const [ordered, setOrdered] = useState(false);
-    const orderItem = () => setOrdered(!ordered);
+    const [button, setButton] = useState({
+        ordered: false,
+        className: "order-button default",
+        text: "Add to order"
+    });
+
+    const orderItem = () => setButton({
+        ordered: !button.ordered,
+        className: "order-button " + (button.ordered ? "default" : "selected"),
+        text: button.ordered ? "Add to order" : "Remove from order"
+    });
 
     return (
         <div className="order-card shadow-lg">
@@ -41,11 +50,8 @@ function OrderItem({ item }) {
                 <div>{item.description || ""}</div>
                 <div className="order-selection">
                     <OrderQuantity options={[1, 2, 3, 4, 5]} />
-                    <button 
-                        className={!ordered ? "order-button order-button-default" : "order-button order-button-selected"} 
-                        onClick={orderItem}
-                    >
-                        {!ordered ? "Add to order" : "Remove from order"}
+                    <button className={button.className} onClick={orderItem}>
+                        {button.text}
                     </button>
                 </div>
             </div>
