@@ -2,7 +2,8 @@ import React from 'react'
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import App from './App'
-import Menu from './components/pages/Menu'
+import ConfirmOrder from './components/pages/ConfirmOrder';
+import OrderPage from './components/pages/OrderPage'
 
 const container = document.getElementById('root');
 const root = createRoot(container);
@@ -11,7 +12,8 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App tab="home"/>}/>
-        <Route path="/order" element={<Menu />} />
+        <Route path="/order" element={<OrderPage />} />
+        <Route path="/confirm-order" element={<ConfirmOrder />} />        
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

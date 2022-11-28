@@ -140,12 +140,9 @@
 }
 
 /* Order */
-.menu-title, .order-section-title {
-  color: whitesmoke;
-}
-
-#order-page {
+.order-page {
   background-color: #166534;
+  color: whitesmoke;  
 }
 
 .order-gallery {
@@ -172,6 +169,7 @@
   display: flex;
   flex-direction: column;
   background-color: whitesmoke;
+  color: #333;
   position: relative;
   border-radius: 0.5em;
   padding: 1em;

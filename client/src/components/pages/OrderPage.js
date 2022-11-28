@@ -1,17 +1,17 @@
 import { useState } from "react"
-import { useNavigate,Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Items from "../../items.json"
 
-function Menu() {
+function OrderPage() {
     const [total, setTotal] = useState(0)
     const navigate = useNavigate()
     const handleSubmit = (event) => {
         event.preventDefault()
-        navigate("/confirm-order")
+        navigate("../confirm-order", {replace: true, state: {total: total}})
     }
     return (
-        <div className="page-section" id="order-page">
-            <h1 className="menu-title">Order Now</h1>
+        <form className="page-section order-page">
+            <h1 className="order-page-title">Order Now</h1>
             <OrderSection sectionName="Appetizers" total={total} setTotal={setTotal} />
             <OrderSection sectionName="Breakfast" total={total} setTotal={setTotal} />
             <OrderSection sectionName="Lunch Entrées" total={total} setTotal={setTotal} />
@@ -19,12 +19,12 @@ function Menu() {
             <button 
                 type="submit" 
                 id="submit-order" 
-                onSubmit={handleSubmit} 
+                onClick={handleSubmit} 
                 className="order-button"
             >
                 Submit Order
             </button>
-        </div>
+        </form>
     )
 }
 
@@ -131,4 +131,4 @@ function OrderButton({ ordered, setOrdered }) {
     )
 }
 
-export default Menu
+export default OrderPage
