@@ -21,7 +21,7 @@ function NavBar() {
 
 function NavLink({link, text}) {
     return (
-        <Link 
+        <Link
             className="nav-link" 
             to={link}
             smooth={true} 
