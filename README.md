@@ -1,4 +1,3 @@
 # react-restaurant
-ReactJS project for a restaurant website using the latest hooks and functional components features
-
+Indian vegetarian restaurant website made with React JS
 https://latheeth.netlify.app/
