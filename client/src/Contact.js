@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <form className="contact-form">
+    <form className="contact-form page">
       <h2>Contact Us</h2>
       <div className="form-group">
         <label>Name</label>

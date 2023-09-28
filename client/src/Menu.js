@@ -14,7 +14,7 @@ function MenuItem({ name, image, description }) {
 
 function Menu() {
   return (
-    <div className="menu-sections">
+    <div className="menu-sections page">
       <section className="menu-section">
         <h2>Breakfast</h2>
         <div className="menu-section-items">
