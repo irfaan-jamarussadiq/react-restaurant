@@ -4,15 +4,15 @@ function Contact() {
       <h2>Contact Us</h2>
       <div className="form-group">
         <label>Name</label>
-        <input />
+        <input required />
       </div>
       <div className="form-group">
         <label>Email</label>
-        <input type="email" />
+        <input type="email" required />
       </div>
       <div className="form-group">
         <label>Message</label>
-        <textarea className="contact-message" />
+        <textarea className="contact-message" required />
       </div>
       <button className="contact-submit" type="submit">
         Send message

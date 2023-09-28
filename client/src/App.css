@@ -151,6 +151,15 @@ nav {
   margin: 8px 0;
 }
 
+.form-group input, .form-group textarea {
+  margin-top: 4px;
+  padding: 8px 6px;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+  outline: 2px solid blue;
+}
+
 .contact-message {
   resize: vertical;
 }
