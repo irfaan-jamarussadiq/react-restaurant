@@ -1,6 +1,9 @@
-import './App.css'
+import "./App.css"
+import { useNavigate } from "react-router-dom"
 
 function App() {
+  const navigate = useNavigate()
+
   return (
     <div className="App">
       <div id="main-page">
@@ -14,7 +17,7 @@ function App() {
         <h2 id="menu-heading">Our Menu</h2>
         <div className="menu-preview-sections">
           <section className="preview-section">
-            <button className="preview-section-btn">
+            <button className="preview-section-btn" onClick={() => navigate("/menu")}>
               <h2>Breakfast Items</h2>
             </button>
             <div className="menu-img-container">
@@ -22,7 +25,7 @@ function App() {
             </div>
           </section>
           <section className="preview-section">
-            <button className="preview-section-btn">
+            <button className="preview-section-btn" onClick={() => navigate("/menu")}>
               <h2>Main Dishes</h2>
             </button>
             <div className="menu-img-container">
@@ -30,7 +33,7 @@ function App() {
             </div>
           </section>
           <section className="preview-section">
-            <button className="preview-section-btn">
+            <button className="preview-section-btn" onClick={() => navigate("/menu")}>
               <h2>Appetizers</h2>
             </button>
             <div className="menu-img-container">
@@ -38,7 +41,7 @@ function App() {
             </div>
           </section>
           <section className="preview-section">
-            <button className="preview-section-btn">
+            <button className="preview-section-btn" onClick={() => navigate("/menu")}>
               <h2>Desserts</h2>
             </button>
             <div className="menu-img-container">
