@@ -51,7 +51,7 @@ nav {
 
 .nav-link {
   color: #f8fafc;
-  margin: 0 1.125em;
+  margin: 0 0.8em;
 }
 
 .nav-link:hover {
@@ -146,7 +146,7 @@ nav {
 .form-group {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  max-width: 800px;
   width: 100%;
   margin: 8px 0;
 }
