@@ -1,13 +1,6 @@
 import "./App.css"
+import MenuItemImage from "./MenuItemImage"
 import { useNavigate } from "react-router-dom"
-
-function MenuItemImage({ source, description }) {
-  return (
-    <div className="menu-img-container">
-      <img className="menu-img" src={source} alt={description} />
-    </div>
-  )
-}
 
 function App() {
   const navigate = useNavigate()

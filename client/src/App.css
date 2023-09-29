@@ -126,6 +126,7 @@ nav {
 }
 
 .menu-item {
+  max-width: 256px;
   margin-right: 16px;
 }
 
@@ -134,7 +135,7 @@ nav {
 }
 
 .menu-img-container {
-  max-width: 248px;
+  max-width: 256px;
 }
 
 .menu-img {
