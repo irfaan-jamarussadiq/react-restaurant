@@ -1,27 +1,13 @@
 function NavBar() {
+  const links = ["Home", "Menu", "Order Now", "Contact Us"]
   return (
     <nav>
       <ul className="nav-links">
-        <li>
-          <a className="nav-link" href="/">
-            Home
-          </a>
-        </li>
-        <li>
-          <a className="nav-link" href="/menu">
-            Menu
-          </a>
-        </li>
-        <li>
-          <a className="nav-link" href="/order">
-            Order Now
-          </a>
-        </li>
-        <li>
-          <a className="nav-link" href="/contact">
-            Contact Us
-          </a>
-        </li>
+        {links.map(link => (
+          <li>
+            <a className="nav-link" href="/">{link}</a>
+          </li>
+        ))}
       </ul>
     </nav>
   )
