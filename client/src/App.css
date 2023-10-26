@@ -14,8 +14,31 @@
   border-radius: 20px;
 }
 
+:root {
+  --btn-bg-color: #22c55e;
+  --btn-bg-hover-color: #16a34a;
+  --text-color: #ffffff;
+  --text-hover-color: #e2e8f0; 
+  --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
 .page {
-  padding: 16px;
+  padding: 24px;
+  padding-top: 24px;
+}
+
+.btn {
+  background-color: var(--btn-bg-color);
+  border: none;
+  color: var(--text-color);
+  font-size: 1em;
+  padding: 12px 16px;
+}
+
+.btn:hover {
+  background-color: var(--btn-bg-hover-color);
+  color: var(--text-hover-color);
+  cursor: pointer;
 }
 
 /* Main Page */
@@ -46,8 +69,7 @@
 /* Navigation Bar */
 nav {
   background-color: #16a34a;
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  margin-bottom: 24px;
+  box-shadow: var(--box-shadow);
 }
 
 .nav-links {
@@ -62,12 +84,12 @@ nav {
 }
 
 .nav-link {
-  color: #f8fafc;
+  color: var(--text-color);
   margin: 0 0.8em;
 }
 
 .nav-link:hover {
-  color: #e2e8f0;
+  color: var(--text-hover-color);
   cursor: pointer;
 }
 
@@ -93,15 +115,16 @@ nav {
 }
 
 .preview-section-btn {
-  position: relative;
-  padding: 6px 8px;
+  padding: 8px;
   border-radius: 4px;
+  position: relative;
   margin-bottom: 4px;
   vertical-align: middle;
 }
 
 .preview-section-btn:hover {
   cursor: pointer;
+  box-shadow: var(--box-shadow);
 }
 
 @media screen and (min-width: 768px) {  
@@ -145,8 +168,67 @@ nav {
 }
 
 /* Order Now */
-.order-now {
-  padding: 16px;
+.menu-section-heading {
+  margin-bottom: 12px;
+}
+
+.order-item, .order-popup {
+  border: none;
+  padding: 8px 16px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.order-item:hover, .order-popup:hover {
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Define a slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.order-popup {
+  height: 325px;
+  width: 500px;
+  animation: slideIn 0.3s forwards;  
+}
+
+.order-btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-btn {
+  background-color: #dc2626;
+  border: 1px solid #020617;
+  color: #f8fafc;
+  font-size: larger;
+  padding: 2px 8px;
+}
+
+.close-btn:hover {
+  background-color: #ef4444;
+  cursor: pointer;
+}
+
+.order-counter { 
+  display: flex;
+  flex-direction: row;
+}
+
+.order-count-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-price {
+  font-weight: bold;
 }
 
 /* Contact Us */
@@ -155,26 +237,19 @@ nav {
   flex-direction: column;
   max-width: 800px;
   width: 100%;
-  margin: 8px 0;
+  margin-top: 12px;
+  margin-bottom: 16px;
 }
 
 .form-group input, .form-group textarea {
-  margin-top: 4px;
-  padding: 8px 6px;
+  margin-top: 8px;
+  padding: 8px;
 }
 
 .form-group input:focus, .form-group textarea:focus {
-  outline: 2px solid blue;
+  outline: 4px solid #3b82f6;
 }
 
 .contact-message {
   resize: vertical;
-}
-
-.contact-submit {
-  padding: 8px;
-}
-
-.contact-submit:hover {
-  cursor: pointer;
 }
