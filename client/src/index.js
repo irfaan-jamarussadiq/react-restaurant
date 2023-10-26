@@ -5,6 +5,7 @@ import App from './App'
 import Menu from './Menu'
 import NavBar from './NavBar'
 import Contact from './Contact'
+import OrderNow from './OrderNow'
 
 const container = document.getElementById('root')
 const root = createRoot(container)
@@ -16,6 +17,7 @@ root.render(
         <Route path="/" element={<App tab="home"/>} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/order" element={<OrderNow />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
