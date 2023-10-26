@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div className="App">
-      <div id="main-page">
+      <div id="main-page" className="page">
         <h1 id="website-title">Latheeth</h1>
         <h3>Experience authentic vegetarian Indian cuisine</h3>
         <div className="main-page-img-container">
