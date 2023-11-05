@@ -48,29 +48,55 @@
   align-items: center;
 }
 
-#website-title {
-  margin-top: 16px;
-  font-size: 48px;
+#site-heading {
+  z-index: 1;
+  position: absolute;
+  margin-top: -4em;
+  top: 50%;
+  width: 100%;
+  text-align: center;
 }
 
-.main-page-img-container {
-  width: 768px;
-}
-
-@media screen and (max-width: 768px) {
-  .main-page-img-container {
-    display: none;
+/* TODO: Better option would be to always center in image container without media query. */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  #site-heading {
+    top: 45vh;
   }
+}
+
+#site-heading button {
+  background-color: #166534;
+  margin: 16px 0;
+  border-radius: 0.5rem;
+}
+
+#website-title {
+  font-family: 'Dancing Script';
+  font-size: 8em;
+}
+
+#website-subtitle {
+  font-family: 'Dancing Script';
+  font-size: 2em;
+}
+
+.main-page-img-container img {
+  z-index: 0;
+  width: 100%;
 }
 
 .main-page-img-container img {
   max-width: 100%;
+  overflow: hidden;
 }
 
 /* Navigation Bar */
 nav {
-  background-color: #16a34a;
+  position: sticky;
+  top: 0;
+  background-color: #166534;
   box-shadow: var(--box-shadow);
+  z-index: 2;
 }
 
 .nav-links {
@@ -85,6 +111,7 @@ nav {
 }
 
 .nav-link {
+  text-decoration: none;
   color: var(--text-color);
   margin: 0 0.8em;
 }
@@ -168,42 +195,63 @@ nav {
 
 /* Order Now */
 .menu-section-heading {
-  margin-bottom: 12px;
+  font-family: 'Dancing Script';
+  font-size: 1.5em;
 }
 
 .order-popup {
-  height: 325px;
-  width: 500px;
+  height: 100%;
+  position: fixed;
+  top: 4em;
+  right: 0;
+  float: right;
+  height: 100vh;
+  transition: 0.5s;  
+  max-width: 312px;
+  margin: 16px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  padding: 1em 2em;
+  transform: translate(-150%) 5s ease-in;  
+  z-index: 1;
 }
 
-.order-btn-container {
+.close-btn-container {
   display: flex;
   justify-content: space-between;
-}
-
-.close-btn {
   align-items: center;
+  margin: 4px 0;
+}
+
+.close {
   background-color: var(--close-btn-bg-color);
-  border: none;
-  color: var(--text-color);
-  display: flex;
-  height: 24px;
-  justify-items: center;
-  width: 24px;
+  float: right;
+  padding: 8px;
 }
 
-.material-symbols-outlined {
-  fill: var(--text-color);
+.close:hover {
+  background-color: var(--close-btn-bg-color);
 }
 
-.order-counter { 
-  display: flex;
-  flex-direction: row;
+.item-details {
+  margin: 8px 0;
 }
 
-.order-count-control {
+.order-description {
+  margin-bottom: 8px;
+}
+
+.dollar-price {
+  font-weight: bold;
+}
+
+.total-price {
+  font-size: x-large;
+  margin: 8px 0;
+}
+
+.item-price-control {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }
 
 .order-price {

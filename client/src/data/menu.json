@@ -1,0 +1,82 @@
+[
+    {
+        "sectionName": "Breakfast",
+        "sectionItems": [
+            {
+                "name": "Mysore Dosa",
+                "imagePath": "images/mysore dosa.jpg",
+                "imageAlt": "South Indian crepes with chutney served on a plate",
+                "description": "South Indian crepe like dish served with sambar and chutney"
+            },
+            {
+                "name": "Idli Vada",
+                "imagePath": "images/idli_vada.jfif",
+                "imageAlt": "Round rice cakes and vada with sambar and chutney served on a metal plate",
+                "description": "Round rice cakes and fritters served with sambar and chutney"
+            },
+            {
+                "name": "Egg Idiyappam",
+                "imagePath": "images/egg_idiyappam.jpg",
+                "imageAlt": "Rice noodles and egg curry served in a bowl",
+                "description": "Rice noodles and egg curry made with tomatoes, onions, and spices"
+            }
+        ]
+    },
+    {
+        "sectionName": "Lunch",
+        "sectionItems": [
+            {
+                "name": "Vegetable Biryani",
+                "imagePath": "images/veg-biryani.jpg",
+                "imageAlt": "Vegetable biryani containing carrots, onions, and peas served in a bowl",
+                "description": "South Indian vegetable biryani made from fried rice and several spices"
+            },
+            {
+                "name": "Egg Biryani",
+                "imagePath": "images/eggBiryani.jfif",
+                "imageAlt": "Egg Biryani",
+                "description": "South Indian egg biryani made from fried rice and several spices"
+            }
+        ]
+    },
+    {
+        "sectionName": "Dinner",
+        "sectionItems": [
+            {
+                "name": "Egg Porotha",
+                "imagePath": "images/egg_porotha.jpg",
+                "imageAlt": "Egg curry on a skillet pan served with porotha (flat bread) and onions",
+                "description": "Egg curry served with porotha (flat bread)"
+            },
+            {
+                "name": "Daal and Rice",
+                "imagePath": "images/daal-and-rice.jpg",
+                "imageAlt": "Lentils curry and rice served on a plate with some pappadam",
+                "description": "Lentils curry and basmati rice served with pappadam"
+            }
+        ]
+    },
+    {
+        "sectionName": "Appetizers",
+        "sectionItems": [
+            {
+                "name": "Pakora",
+                "imagePath": "images/pakora.jpg",
+                "imageAlt": "Vegetable pakora on a plate",
+                "description": "Fried snack made with onions, potatoes, gram flour, and spices"
+            },
+            {
+                "name": "Samosa",
+                "imagePath": "images/samosa.jpg",
+                "imageAlt": "Samosa on a serving board with spices",
+                "description": "Fried snack made with onions, potatoes, gram flour, and spices"
+            },
+            {
+                "name": "Gulab Jamun",
+                "imagePath": "images/gulab jamun.jpg",
+                "imageAlt": "Round sweet dipped in oil on a small plate",
+                "description": "Sweet fried dough ball dipped in oil"
+            }
+        ]
+    }
+]
